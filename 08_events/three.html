@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // set interval will execute the function continuoslly many time after a gap of time interval given
+    const sayDate = function(str){
+        //  console.log("shyam", Date.now());
+
+        // we can also use parameter passed to set interval
+        console.log(str, Date.now());
+
+    }
+   // const intervalId = setInterval(sayDate, 1000, "hi")
+   // clearInterval(intervalId)
+
+
+    // Assignment :- Add feature so that the code will start executing on click of start button and stop on click of stop button 
+
+
+
+document.getElementById('start').addEventListener('click',function (){
+    const intervalId = setInterval(sayDate, 1000, "hi")
+
+
+})
+
+    
+
+   // here the third parameter is the parameter passed 
+
+
+   // const intervalId = setInterval(sayDate, 1000, "hi")
+
+   // we can clear the interval using below  
+
+   document.getElementById('stop').addEventListener('click',function (){
+    clearInterval(intervalId)
+   })
+
+   // clearInterval(intervalId)
+</script>
+</html>
