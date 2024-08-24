@@ -3,7 +3,7 @@
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id === anotherId); // output is false because symbol, create uniqueness
-// for bigInt we us e as  => const bigNumber = 122525654323456776543n;
+// for bigInt we use as  => const bigNumber = 122525654323456776543n;
 
 
 // non primitive datatypes 
